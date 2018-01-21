@@ -1,0 +1,4 @@
+#Sun Jan 21 10:02:20 EST 2018
+base.0=/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/build/intermediates/transforms/dexMerger/debug/8
+path.0=classes.dex
+renamed.0=classes.dex
