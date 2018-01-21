@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/AndroidTriviaGame/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
