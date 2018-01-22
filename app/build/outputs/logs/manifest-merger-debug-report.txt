@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2e41d3079c7ecc560c2ef7294e16c7ea/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3cc54029ad7f58b13f4870105ed3d478/AndroidManifest.xml:17:1-28:12
@@ -15,25 +15,25 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/4721cda742fe18f3cae934dc9027cbcb/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/85b96f844181d916a45e5748d95bd826/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/80fd08ac1c29499ca39f66f28a041ec6/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:3:5-48
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:5:5-19:19
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:5:5-22:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2e41d3079c7ecc560c2ef7294e16c7ea/AndroidManifest.xml:9:5-20
@@ -82,6 +82,18 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:16:27-74
+activity#edu.pitt.cs1699.androidtriviagame.PlayActivity
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:19:9-50
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:19:19-47
+activity#edu.pitt.cs1699.androidtriviagame.AddWordActivity
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:20:9-53
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:20:19-50
+activity#edu.pitt.cs1699.androidtriviagame.ScoreHistoryActivity
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:21:9-67
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml:21:19-55
 uses-sdk
 INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment1/AndroidTriviaGame/app/src/main/AndroidManifest.xml

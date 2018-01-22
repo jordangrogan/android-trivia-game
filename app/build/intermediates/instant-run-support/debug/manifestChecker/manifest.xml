@@ -24,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="edu.pitt.cs1699.androidtriviagame.PlayActivity" />
+        <activity android:name="edu.pitt.cs1699.androidtriviagame.AddWordActivity" />
+        <activity android:name="edu.pitt.cs1699.androidtriviagame.ScoreHistoryActivity" />
 
         <meta-data
             android:name="android.support.VERSION"
