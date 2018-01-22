@@ -35,6 +35,7 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="play"
             android:text="PLAY"
             android:textSize="18sp" />
 
@@ -42,6 +43,7 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="addWord"
             android:text="ADD WORD"
             android:textSize="18sp" />
 
@@ -49,6 +51,7 @@
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="scoreHistory"
             android:text="SCORE HISTORY"
             android:textSize="18sp" />
 
