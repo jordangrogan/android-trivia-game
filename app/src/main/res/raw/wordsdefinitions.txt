@@ -1,0 +1,14 @@
+char
+a variable of this data type holds only a single character
+variable
+represent storage locations in the computers memory
+integer
+whole number
+float
+decimal number
+strings
+a series of characters to be stored in consecutive memory locations
+constant
+a data item whose value cannot change during the programmers execution
+comments
+notes of explanation that document lines or sections of a program

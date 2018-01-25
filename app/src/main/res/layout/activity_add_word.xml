@@ -24,7 +24,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
             android:text="Term" />
 
         <EditText
@@ -32,7 +33,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
             android:text="Definition" />
 
         <Button
@@ -40,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:onClick="addWord"
             android:text="OK" />
 
     </LinearLayout>
