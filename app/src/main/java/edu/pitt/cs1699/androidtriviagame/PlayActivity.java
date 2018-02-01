@@ -70,10 +70,17 @@ public class PlayActivity extends AppCompatActivity {
 
         scan.close();
 
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();  // Always call the superclass method first
+
+        // Reset
+        score = 0;
+        currentWord = 0;
         setGameWordList();
-
         askQuestion();
-
     }
 
     private void setGameWordList() {
@@ -159,11 +166,6 @@ public class PlayActivity extends AppCompatActivity {
         Toast.makeText(this, "Final Score: " + score, Toast.LENGTH_SHORT).show();
 
         // Save Score
-
-        // Reset
-        setGameWordList();
-        score = 0;
-        currentWord = 0;
 
         // End Activity
         finish();
