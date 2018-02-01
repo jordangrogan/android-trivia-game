@@ -70,6 +70,14 @@ public class PlayActivity extends AppCompatActivity {
 
         scan.close();
 
+        setGameWordList();
+
+        askQuestion();
+
+    }
+
+    private void setGameWordList() {
+
         // Current Game: Generate 5 words by shuffling and truncating list to 5 words
         currentGameWordList = new ArrayList<>(words);
         Collections.shuffle(currentGameWordList);
@@ -80,8 +88,6 @@ public class PlayActivity extends AppCompatActivity {
         Log.d("Word 3", currentGameWordList.get(2).word);
         Log.d("Word 4", currentGameWordList.get(3).word);
         Log.d("Word 5", currentGameWordList.get(4).word);
-
-        askQuestion();
 
     }
 
@@ -154,11 +160,15 @@ public class PlayActivity extends AppCompatActivity {
 
         // Save Score
 
+        // Reset
+        setGameWordList();
+        score = 0;
+        currentWord = 0;
+
         // End Activity
         finish();
 
     }
-
 
     private static class Word {
         public String word;
