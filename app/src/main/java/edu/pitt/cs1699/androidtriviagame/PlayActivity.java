@@ -1,5 +1,6 @@
 package edu.pitt.cs1699.androidtriviagame;
 
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,12 +12,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
-import java.util.HashMap;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -66,6 +66,7 @@ public class PlayActivity extends AppCompatActivity {
             Log.d("Definition:", d);
             words.add(new Word(w,d));
             defs.add(d);
+
         }
 
         scan.close();
@@ -166,6 +167,21 @@ public class PlayActivity extends AppCompatActivity {
         Toast.makeText(this, "Final Score: " + score, Toast.LENGTH_SHORT).show();
 
         // Save Score
+
+        SharedPreferences prefs = getSharedPreferences("triviagamescores", MODE_PRIVATE);
+        String scores = prefs.getString("scores","");
+
+        Date currentDateTime = Calendar.getInstance().getTime();
+        Log.d("CurrentDateTime", currentDateTime.toString());
+
+        String scoreToStore = currentDateTime.toString() + "," + score + ";";
+        scores = scores + scoreToStore;
+        Log.d("Added to Scores Set", scoreToStore);
+
+        SharedPreferences.Editor prefsEditor = prefs.edit();
+        prefsEditor.putString("scores", scores);
+
+        prefsEditor.apply();
 
         // End Activity
         finish();

@@ -25,23 +25,17 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/lblHighestScore"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Highest Score:" />
-
-            <TextView
                 android:id="@+id/txtHighestScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="0%" />
+                android:text="Highest Score: None"
+                android:textAlignment="center" />
 
         </LinearLayout>
 
         <ListView
-            android:id="@+id/listDefinitions"
+            android:id="@+id/listScoreHistory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
