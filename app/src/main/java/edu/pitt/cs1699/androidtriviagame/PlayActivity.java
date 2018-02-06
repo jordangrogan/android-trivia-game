@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
@@ -22,9 +23,9 @@ import java.util.Scanner;
 
 public class PlayActivity extends AppCompatActivity {
 
-    private static List<Word> words = new ArrayList<>();
+    private static List<Word> words;
 
-    private static List<String> defs = new ArrayList<>();
+    private static List<String> defs;
 
     private static List<Word> currentGameWordList;
 
@@ -38,6 +39,9 @@ public class PlayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+
+        words = new ArrayList<>();
+        defs = new ArrayList<>();
 
 
         // ADD WORDS FROM RESOURCE
@@ -70,6 +74,8 @@ public class PlayActivity extends AppCompatActivity {
         }
 
         scan.close();
+
+        Log.d("onCreate defs=", Arrays.toString(defs.toArray()));
 
     }
 
@@ -105,13 +111,20 @@ public class PlayActivity extends AppCompatActivity {
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
         progressBar.setProgress((currentWord + 1) * 20);
 
+        Log.d("defs=", Arrays.toString(defs.toArray()));
         // Current Word: Generate answer list by removing answer, shuffling, selecting first 4, adding back answer, shuffling again
         currentWordAnswerList = new ArrayList<>(defs);
+        Log.d("currentWordAnswerList=", Arrays.toString(currentWordAnswerList.toArray()));
         currentWordAnswerList.remove(currentGameWordList.get(currentWord).def);
+        Log.d("currAnsLst PostRemoval=", Arrays.toString(currentWordAnswerList.toArray()));
         Collections.shuffle(currentWordAnswerList);
+        Log.d("AnsList Shuffled=", Arrays.toString(currentWordAnswerList.toArray()));
         currentWordAnswerList = currentWordAnswerList.subList(0, 4);
+        Log.d("AnsList Chopped=", Arrays.toString(currentWordAnswerList.toArray()));
         currentWordAnswerList.add(currentGameWordList.get(currentWord).def);
+        Log.d("AnsListWithAns=", Arrays.toString(currentWordAnswerList.toArray()));
         Collections.shuffle(currentWordAnswerList);
+        Log.d("Final Ans List =", Arrays.toString(currentWordAnswerList.toArray()));
 
         Log.d("Word " + currentWord + " Answer Option 1", currentWordAnswerList.get(0));
         Log.d("Word " + currentWord + " Answer Option 2", currentWordAnswerList.get(1));
