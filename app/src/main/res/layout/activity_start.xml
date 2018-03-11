@@ -21,16 +21,16 @@
             android:textSize="30sp" />
 
         <Switch
-            android:id="@+id/musicSwitch"
+            android:id="@+id/readSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_weight="1"
             android:autoText="false"
-            android:onClick="musicOnOff"
+            android:onClick="readOnOff"
             android:showText="true"
             android:switchPadding="5dp"
-            android:text="Play Music" />
+            android:text="Read Questions &amp; Answers" />
 
         <Button
             android:id="@+id/button"

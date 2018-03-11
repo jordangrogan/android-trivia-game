@@ -1,6 +1,7 @@
 package edu.pitt.cs1699.androidtriviagame;
 
 import android.content.SharedPreferences;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -133,7 +134,18 @@ public class PlayActivity extends AppCompatActivity {
         Log.d("Word " + currentWord + " Answer Option 5", currentWordAnswerList.get(4));
 
         TextView text = (TextView) findViewById(R.id.textWord);
-        text.setText(currentGameWordList.get(currentWord).word);
+        String word = currentGameWordList.get(currentWord).word;
+        text.setText(word);
+        // Text to Speech Word
+        if (StartActivity.ttsIsReady && StartActivity.textToSpeechTurnedOn) StartActivity.tts.speak(word, TextToSpeech.QUEUE_ADD, null);
+
+        // Text to Speech Answers
+        for (int i = 0; i < currentWordAnswerList.size(); i++) {
+            if (StartActivity.ttsIsReady && StartActivity.textToSpeechTurnedOn) {
+                StartActivity.tts.speak("Answer " + (i+1) + ". " + currentWordAnswerList.get(i), TextToSpeech.QUEUE_ADD, null);
+            }
+        }
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, currentWordAnswerList);
         ListView list = (ListView) findViewById(R.id.listDefinitions);
         list.setOnItemClickListener(

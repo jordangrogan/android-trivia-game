@@ -1,6 +1,7 @@
 package edu.pitt.cs1699.androidtriviagame;
 
 import android.media.MediaPlayer;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,14 +11,25 @@ import android.widget.Switch;
 
 public class StartActivity extends AppCompatActivity {
 
-    private static MediaPlayer mp;
+    public static boolean textToSpeechTurnedOn = false;
+    public static TextToSpeech tts;
+    public static boolean ttsIsReady = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-        mp = MediaPlayer.create(this, R.raw.gamemusic);
-        mp.setLooping(true);
+
+        // Initialize Text to Speech
+        // Initializing it in StartActivity even though using it in PlayActivity because it takes a while to initialize.
+        tts = new TextToSpeech(this,
+            new TextToSpeech.OnInitListener() {
+                @Override
+                public void onInit(int status) {
+                    // code to run when done loading
+                    ttsIsReady = true;
+                }
+            });
     }
 
     public void play(View view) {
@@ -35,17 +47,17 @@ public class StartActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void musicOnOff(View view) {
-        Switch musicSwitch = findViewById(R.id.musicSwitch);
+    public void readOnOff(View view) {
+        Switch readSwitch = findViewById(R.id.readSwitch);
 
-        if (musicSwitch.isChecked()) {
+        if (readSwitch.isChecked()) {
             // MUSIC ON
-            Log.d("Music Switch", "Is Checked");
-            mp.start();
+            Log.d("Read Switch", "Is Checked");
+            textToSpeechTurnedOn = true;
         } else {
             // MUSIC OFF
-            Log.d("Music Switch", "Is Not Checked");
-            mp.pause();
+            Log.d("Read Switch", "Is Not Checked");
+            textToSpeechTurnedOn = false;
         }
     }
 
