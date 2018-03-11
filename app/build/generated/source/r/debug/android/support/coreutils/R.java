@@ -79,10 +79,10 @@ public final class R {
         public static final int italic = 0x7f070041;
         public static final int line1 = 0x7f070042;
         public static final int line3 = 0x7f070043;
-        public static final int normal = 0x7f07004f;
-        public static final int notification_background = 0x7f070050;
-        public static final int notification_main_column = 0x7f070051;
-        public static final int notification_main_column_container = 0x7f070052;
+        public static final int normal = 0x7f07004e;
+        public static final int notification_background = 0x7f07004f;
+        public static final int notification_main_column = 0x7f070050;
+        public static final int notification_main_column_container = 0x7f070051;
         public static final int right_icon = 0x7f07005a;
         public static final int right_side = 0x7f07005b;
         public static final int text = 0x7f07007a;
