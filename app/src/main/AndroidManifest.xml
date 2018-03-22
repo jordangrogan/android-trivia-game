@@ -9,16 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".StartActivity" />
         <activity android:name=".PlayActivity" />
         <activity android:name=".AddWordActivity" />
-        <activity android:name=".ScoreHistoryActivity"></activity>
+        <activity android:name=".ScoreHistoryActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
+
+    <!-- permissions needed for the camera -->
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 
 </manifest>

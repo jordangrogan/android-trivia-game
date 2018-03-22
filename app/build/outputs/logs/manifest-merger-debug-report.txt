@@ -1,61 +1,123 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2e41d3079c7ecc560c2ef7294e16c7ea/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3cc54029ad7f58b13f4870105ed3d478/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/2d8e751512af436ee5f6975cb3e0a6b5/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/cba2efe3ce1467fd49c477b137894707/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a078a2b4770f5ce39093b730b4b62758/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/36c3325d275426070fcb9efbc903a47c/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bb3f0c0ad5d3ba1271698a2fa9d8de11/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/4721cda742fe18f3cae934dc9027cbcb/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/85b96f844181d916a45e5748d95bd826/AndroidManifest.xml:17:1-31:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/80fd08ac1c29499ca39f66f28a041ec6/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-35:12
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.firebase:firebase-core:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/5aab903882c7d808a77535f831254ad3/AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/570f589d53bb8d0b1ab569a6f6199f3a/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/6ca78f1f7ca3a4dcf6e57cecb3cae6de/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/334481964028bb227605f23c0cd716fd/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:17:1-54:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6e4a161103c561f186dd03c1258e5b2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/743453ac3b0843acd2c4df683bff0e7a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/7a03b96559099d96dc8be5072a0ef218/AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/7529b04601e5659df32a9d0fc34219d9/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/6d3720d072bac0ea1bc9357cef386595/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/82804f87808833470460a1b7209220a3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/1daf4fc1b41922c57d0b9d87ab5e8d5e/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6be0db325b76e89ddc3c559dfad119a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f57bfcfff5b93cdc7ecf953d678463c5/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/c93aea1459813e40a0cb7cd4e4164389/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/69b4bfc1cb3e423ec92bdaa45a44b008/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/9b64068e74e31b5873d6a903410b2601/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/3f8bd76d200dc3b4481dfafe8d9e8324/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/960f9f0d2680f5077e5304cd0f84fd76/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/8aa3a856e7a95f1165cf9c53bd5ab7a7/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/f750b0b5332d659e19dbef4d9385346e/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/fb8218b2ceeec92ebab76f138ab3da20/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/9ae8b7cc08b201e661b8e7c4fbfaaac8/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/c08c74a721d76bf021169af9f595d48a/AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9059e487aab28dd9fde26cb1efad0fe5/AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/cbcc5c4e8bc99048be6d05dfe50f9e32/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:3:5-48
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:5:5-22:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2e41d3079c7ecc560c2ef7294e16c7ea/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2e41d3079c7ecc560c2ef7294e16c7ea/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3cc54029ad7f58b13f4870105ed3d478/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3cc54029ad7f58b13f4870105ed3d478/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/2d8e751512af436ee5f6975cb3e0a6b5/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/2d8e751512af436ee5f6975cb3e0a6b5/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/cba2efe3ce1467fd49c477b137894707/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/cba2efe3ce1467fd49c477b137894707/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a078a2b4770f5ce39093b730b4b62758/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a078a2b4770f5ce39093b730b4b62758/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/36c3325d275426070fcb9efbc903a47c/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/36c3325d275426070fcb9efbc903a47c/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bb3f0c0ad5d3ba1271698a2fa9d8de11/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bb3f0c0ad5d3ba1271698a2fa9d8de11/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/4721cda742fe18f3cae934dc9027cbcb/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/4721cda742fe18f3cae934dc9027cbcb/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/85b96f844181d916a45e5748d95bd826/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/85b96f844181d916a45e5748d95bd826/AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/80fd08ac1c29499ca39f66f28a041ec6/AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/80fd08ac1c29499ca39f66f28a041ec6/AndroidManifest.xml:24:5-28:19
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:5:5-24:19
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.firebase:firebase-core:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/5aab903882c7d808a77535f831254ad3/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/5aab903882c7d808a77535f831254ad3/AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/570f589d53bb8d0b1ab569a6f6199f3a/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/570f589d53bb8d0b1ab569a6f6199f3a/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:27:5-38:19
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:34:5-57:19
+MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6e4a161103c561f186dd03c1258e5b2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6e4a161103c561f186dd03c1258e5b2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/743453ac3b0843acd2c4df683bff0e7a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/743453ac3b0843acd2c4df683bff0e7a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/7a03b96559099d96dc8be5072a0ef218/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/7a03b96559099d96dc8be5072a0ef218/AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/7529b04601e5659df32a9d0fc34219d9/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/7529b04601e5659df32a9d0fc34219d9/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/6d3720d072bac0ea1bc9357cef386595/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/6d3720d072bac0ea1bc9357cef386595/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/82804f87808833470460a1b7209220a3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/82804f87808833470460a1b7209220a3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/1daf4fc1b41922c57d0b9d87ab5e8d5e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/1daf4fc1b41922c57d0b9d87ab5e8d5e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6be0db325b76e89ddc3c559dfad119a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6be0db325b76e89ddc3c559dfad119a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f57bfcfff5b93cdc7ecf953d678463c5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f57bfcfff5b93cdc7ecf953d678463c5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/c93aea1459813e40a0cb7cd4e4164389/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/c93aea1459813e40a0cb7cd4e4164389/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/69b4bfc1cb3e423ec92bdaa45a44b008/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/69b4bfc1cb3e423ec92bdaa45a44b008/AndroidManifest.xml:25:5-29:19
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/9b64068e74e31b5873d6a903410b2601/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/9b64068e74e31b5873d6a903410b2601/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/3f8bd76d200dc3b4481dfafe8d9e8324/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/3f8bd76d200dc3b4481dfafe8d9e8324/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/960f9f0d2680f5077e5304cd0f84fd76/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/960f9f0d2680f5077e5304cd0f84fd76/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/8aa3a856e7a95f1165cf9c53bd5ab7a7/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/8aa3a856e7a95f1165cf9c53bd5ab7a7/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/f750b0b5332d659e19dbef4d9385346e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/f750b0b5332d659e19dbef4d9385346e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/fb8218b2ceeec92ebab76f138ab3da20/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/fb8218b2ceeec92ebab76f138ab3da20/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/9ae8b7cc08b201e661b8e7c4fbfaaac8/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/9ae8b7cc08b201e661b8e7c4fbfaaac8/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/c08c74a721d76bf021169af9f595d48a/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/c08c74a721d76bf021169af9f595d48a/AndroidManifest.xml:5:5-20
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9059e487aab28dd9fde26cb1efad0fe5/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9059e487aab28dd9fde26cb1efad0fe5/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/cbcc5c4e8bc99048be6d05dfe50f9e32/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/cbcc5c4e8bc99048be6d05dfe50f9e32/AndroidManifest.xml:5:5-20
 	android:supportsRtl
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
@@ -68,7 +130,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/c
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:11:9-40
-activity#edu.pitt.cs1699.androidtriviagame.StartActivity
+activity#edu.pitt.cs1699.androidtriviagame.LoginActivity
 ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:12:19-48
@@ -82,48 +144,118 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:16:27-74
+activity#edu.pitt.cs1699.androidtriviagame.StartActivity
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:19:9-51
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:19:19-48
 activity#edu.pitt.cs1699.androidtriviagame.PlayActivity
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:19:9-50
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:20:9-50
 	android:name
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:19:19-47
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:20:19-47
 activity#edu.pitt.cs1699.androidtriviagame.AddWordActivity
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:20:9-53
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:21:9-53
 	android:name
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:20:19-50
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:21:19-50
 activity#edu.pitt.cs1699.androidtriviagame.ScoreHistoryActivity
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:21:9-67
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:22:9-58
 	android:name
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:21:19-55
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:22:19-55
+activity#edu.pitt.cs1699.androidtriviagame.ProfileActivity
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:23:9-62
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:23:19-50
+uses-permission#android.permission.CAMERA
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:27:5-28:52
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:28:9-49
+uses-feature#android.hardware.camera
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:29:5-31:35
+	android:required
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:31:9-32
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:30:9-47
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:32:5-91
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:32:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:33:5-97
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:33:22-78
 uses-sdk
 INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2e41d3079c7ecc560c2ef7294e16c7ea/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2e41d3079c7ecc560c2ef7294e16c7ea/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3cc54029ad7f58b13f4870105ed3d478/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3cc54029ad7f58b13f4870105ed3d478/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/2d8e751512af436ee5f6975cb3e0a6b5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/2d8e751512af436ee5f6975cb3e0a6b5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/cba2efe3ce1467fd49c477b137894707/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/cba2efe3ce1467fd49c477b137894707/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a078a2b4770f5ce39093b730b4b62758/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a078a2b4770f5ce39093b730b4b62758/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/36c3325d275426070fcb9efbc903a47c/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/36c3325d275426070fcb9efbc903a47c/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bb3f0c0ad5d3ba1271698a2fa9d8de11/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bb3f0c0ad5d3ba1271698a2fa9d8de11/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/4721cda742fe18f3cae934dc9027cbcb/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/4721cda742fe18f3cae934dc9027cbcb/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/85b96f844181d916a45e5748d95bd826/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/85b96f844181d916a45e5748d95bd826/AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/80fd08ac1c29499ca39f66f28a041ec6/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/80fd08ac1c29499ca39f66f28a041ec6/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/5aab903882c7d808a77535f831254ad3/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/5aab903882c7d808a77535f831254ad3/AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/570f589d53bb8d0b1ab569a6f6199f3a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/570f589d53bb8d0b1ab569a6f6199f3a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/6ca78f1f7ca3a4dcf6e57cecb3cae6de/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/6ca78f1f7ca3a4dcf6e57cecb3cae6de/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/334481964028bb227605f23c0cd716fd/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/334481964028bb227605f23c0cd716fd/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6e4a161103c561f186dd03c1258e5b2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6e4a161103c561f186dd03c1258e5b2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/743453ac3b0843acd2c4df683bff0e7a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/743453ac3b0843acd2c4df683bff0e7a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/7a03b96559099d96dc8be5072a0ef218/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-license-11.8.0.aar/7a03b96559099d96dc8be5072a0ef218/AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/7529b04601e5659df32a9d0fc34219d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/7529b04601e5659df32a9d0fc34219d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/6d3720d072bac0ea1bc9357cef386595/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/6d3720d072bac0ea1bc9357cef386595/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/82804f87808833470460a1b7209220a3/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/82804f87808833470460a1b7209220a3/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/1daf4fc1b41922c57d0b9d87ab5e8d5e/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/1daf4fc1b41922c57d0b9d87ab5e8d5e/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6be0db325b76e89ddc3c559dfad119a/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6be0db325b76e89ddc3c559dfad119a/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f57bfcfff5b93cdc7ecf953d678463c5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f57bfcfff5b93cdc7ecf953d678463c5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/c93aea1459813e40a0cb7cd4e4164389/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/c93aea1459813e40a0cb7cd4e4164389/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/69b4bfc1cb3e423ec92bdaa45a44b008/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/69b4bfc1cb3e423ec92bdaa45a44b008/AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/9b64068e74e31b5873d6a903410b2601/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/9b64068e74e31b5873d6a903410b2601/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/3f8bd76d200dc3b4481dfafe8d9e8324/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/3f8bd76d200dc3b4481dfafe8d9e8324/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/960f9f0d2680f5077e5304cd0f84fd76/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/960f9f0d2680f5077e5304cd0f84fd76/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/8aa3a856e7a95f1165cf9c53bd5ab7a7/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/8aa3a856e7a95f1165cf9c53bd5ab7a7/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/f750b0b5332d659e19dbef4d9385346e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/f750b0b5332d659e19dbef4d9385346e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/fb8218b2ceeec92ebab76f138ab3da20/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/fb8218b2ceeec92ebab76f138ab3da20/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/9ae8b7cc08b201e661b8e7c4fbfaaac8/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-license-11.8.0.aar/9ae8b7cc08b201e661b8e7c4fbfaaac8/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/c08c74a721d76bf021169af9f595d48a/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-license-11.8.0.aar/c08c74a721d76bf021169af9f595d48a/AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9059e487aab28dd9fde26cb1efad0fe5/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9059e487aab28dd9fde26cb1efad0fe5/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/cbcc5c4e8bc99048be6d05dfe50f9e32/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/cbcc5c4e8bc99048be6d05dfe50f9e32/AndroidManifest.xml:4:5-43
 INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
@@ -132,31 +264,219 @@ INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assign
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:23:9-29:75
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:25:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:27:13-48
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:28:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:29:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:24:13-85
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:34:13-89
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3cc54029ad7f58b13f4870105ed3d478/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3cc54029ad7f58b13f4870105ed3d478/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/2d8e751512af436ee5f6975cb3e0a6b5/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/2d8e751512af436ee5f6975cb3e0a6b5/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/cba2efe3ce1467fd49c477b137894707/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/cba2efe3ce1467fd49c477b137894707/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a078a2b4770f5ce39093b730b4b62758/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/a078a2b4770f5ce39093b730b4b62758/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/36c3325d275426070fcb9efbc903a47c/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/36c3325d275426070fcb9efbc903a47c/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bb3f0c0ad5d3ba1271698a2fa9d8de11/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bb3f0c0ad5d3ba1271698a2fa9d8de11/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/4721cda742fe18f3cae934dc9027cbcb/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/4721cda742fe18f3cae934dc9027cbcb/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/85b96f844181d916a45e5748d95bd826/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/85b96f844181d916a45e5748d95bd826/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/7529b04601e5659df32a9d0fc34219d9/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/7529b04601e5659df32a9d0fc34219d9/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/6d3720d072bac0ea1bc9357cef386595/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/6d3720d072bac0ea1bc9357cef386595/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/82804f87808833470460a1b7209220a3/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/82804f87808833470460a1b7209220a3/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/1daf4fc1b41922c57d0b9d87ab5e8d5e/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/1daf4fc1b41922c57d0b9d87ab5e8d5e/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6be0db325b76e89ddc3c559dfad119a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c6be0db325b76e89ddc3c559dfad119a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f57bfcfff5b93cdc7ecf953d678463c5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f57bfcfff5b93cdc7ecf953d678463c5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/c93aea1459813e40a0cb7cd4e4164389/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/c93aea1459813e40a0cb7cd4e4164389/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/69b4bfc1cb3e423ec92bdaa45a44b008/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/69b4bfc1cb3e423ec92bdaa45a44b008/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/21f79928c228af312aca9c20b2244f3e/AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:appcompat-v7:26.1.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/AndroidManifest.xml:27:13-51
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/AndroidManifest.xml:24:13-79
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:23:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:24:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:25:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:28:9-32:20
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:28:9-32:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:30:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:29:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:33:9-41:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:35:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:36:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:37:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:34:13-100
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:38:13-40:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:39:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:39:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:43:9-46:40
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:34:9-37:40
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.8.0.aar/7ad34d2100f28e9b5034f956bb69bbf2/AndroidManifest.xml:34:9-37:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:45:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:44:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:47:9-51:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:49:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:50:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:51:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.8.0.aar/d74b4be5ed226275c64ad033323f1162/AndroidManifest.xml:48:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:26:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:29:9-63
+permission#edu.pitt.cs1699.androidtriviagame.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:29:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:32:22-76
+uses-permission#edu.pitt.cs1699.androidtriviagame.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:32:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:35:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:38:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:36:13-78
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:39:13-43:29
+intent-filter#com.google.android.c2dm.intent.RECEIVE+edu.pitt.cs1699.androidtriviagame
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:39:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:40:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:40:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:42:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:42:27-58
+category#edu.pitt.cs1699.androidtriviagame
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:42:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:42:27-58
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:51:13-77
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.8.0.aar/62e028da45e3f427e022bab178a3b631/AndroidManifest.xml:54:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:8:9-12:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:11:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:12:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/cbcba5acd1aebaed617152181a9ded83/AndroidManifest.xml:9:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/743453ac3b0843acd2c4df683bff0e7a/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/743453ac3b0843acd2c4df683bff0e7a/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/743453ac3b0843acd2c4df683bff0e7a/AndroidManifest.xml:24:13-58
 meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/80fd08ac1c29499ca39f66f28a041ec6/AndroidManifest.xml:25:9-27:47
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9059e487aab28dd9fde26cb1efad0fe5/AndroidManifest.xml:25:9-27:47
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/80fd08ac1c29499ca39f66f28a041ec6/AndroidManifest.xml:27:13-44
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9059e487aab28dd9fde26cb1efad0fe5/AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/80fd08ac1c29499ca39f66f28a041ec6/AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9059e487aab28dd9fde26cb1efad0fe5/AndroidManifest.xml:26:13-58

@@ -56,5 +56,13 @@
             android:text="SCORE HISTORY"
             android:textSize="18sp" />
 
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="profile"
+            android:text="PROFILE"
+            android:textSize="18sp" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
