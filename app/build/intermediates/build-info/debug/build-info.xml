@@ -5,36 +5,28 @@
     build-mode="COLD"
     density="560dpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1521679871462"
+    timestamp="1521776322770"
     token="4026872753483373283"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="231" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="65" />
+        duration="0" />
     <task
         name="verifier"
-        duration="2" />
-
-    <artifact
-        location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1521597271343"
+        timestamp="1521739188142"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/outputs/apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
@@ -51,10 +43,10 @@
             location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -68,48 +60,22 @@
         <artifact
             location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1521677289768"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="FIELD_ADDED"
-        timestamp="1521679232827"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
         <artifact
             location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/outputs/apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1521679871462"
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1521748441660"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
     </build>
+    <build
+        build-mode="COLD"
+        timestamp="1521776322770"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

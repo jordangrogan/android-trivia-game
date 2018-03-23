@@ -1,6 +1,8 @@
 package edu.pitt.cs1699.androidtriviagame;
 
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +15,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,11 +32,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class PlayActivity extends AppCompatActivity {
 
-    private static List<Word> words;
+    //private static List<Word> words;
 
-    private static List<String> defs;
+    //private static List<String> defs;
 
     private static List<Word> currentGameWordList;
 
@@ -36,15 +47,45 @@ public class PlayActivity extends AppCompatActivity {
 
     private static int score = 0;
 
+    private static FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
-        words = new ArrayList<>();
-        defs = new ArrayList<>();
+        syncWordsDatabase();
 
+        // ADD WORDS FROM FIREBASE
 
+//        mAuth = FirebaseAuth.getInstance();
+//
+//        DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
+//        DatabaseReference wordsDB = fb.child("words");
+//
+//        wordsDB.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                Log.d("dataSnapshot", dataSnapshot.toString());
+//                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+//                    Log.d("Add word FB", snapshot.getKey().toString() + "//" + snapshot.getValue().toString());
+//                    Word w = new Word(snapshot.getKey().toString(), snapshot.getValue().toString());
+//                    words.add(w);
+//                    defs.add(w.def);
+//                }
+//
+//                score = 0;
+//                currentWord = 0;
+//                setGameWordList();
+//                askQuestion();
+//            }
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//                Log.d("cancel", "db cancel");
+//            }
+//        });
+
+        /*
         // ADD WORDS FROM RESOURCE
         Scanner scan = new Scanner(
                 getResources().openRawResource(R.raw.wordsdefinitions));
@@ -74,9 +115,9 @@ public class PlayActivity extends AppCompatActivity {
 
         }
 
-        scan.close();
+        scan.close(); */
 
-        Log.d("onCreate defs=", Arrays.toString(defs.toArray()));
+        //Log.d("onCreate defs=", Arrays.toString(defs.toArray()));
 
     }
 
@@ -85,16 +126,34 @@ public class PlayActivity extends AppCompatActivity {
         super.onResume();  // Always call the superclass method first
 
         // Reset
-        score = 0;
-        currentWord = 0;
-        setGameWordList();
-        askQuestion();
+//        score = 0;
+//        currentWord = 0;
+//        setGameWordList();
+//        askQuestion();
     }
 
     private void setGameWordList() {
 
+        // Generate currentGameWordList ArrayList from local database
+        currentGameWordList = new ArrayList<>();
+        SQLiteDatabase db = openOrCreateDatabase("wordslist", MODE_PRIVATE, null);
+        Cursor cr = db.rawQuery("SELECT * FROM words", null);
+        if (cr.moveToFirst()) {
+            do {
+                String w = cr.getString(cr.getColumnIndex("word"));
+                String d = cr.getString(cr.getColumnIndex("def"));
+                Log.d("adding", w+":"+d);
+                currentGameWordList.add(new Word(w, d));
+            } while (cr.moveToNext());
+            cr.close();
+        }
+
+        for(int j=0; j<currentGameWordList.size(); j++) {
+            Log.d("currentGameWordList", j + ":" + currentGameWordList.get(j));
+        }
+        Log.d("currentGameWordList=", Arrays.toString(currentGameWordList.toArray()));
         // Current Game: Generate 5 words by shuffling and truncating list to 5 words
-        currentGameWordList = new ArrayList<>(words);
+        //currentGameWordList = new ArrayList<>(words);
         Collections.shuffle(currentGameWordList);
         currentGameWordList = currentGameWordList.subList(0, 5);
 
@@ -112,9 +171,21 @@ public class PlayActivity extends AppCompatActivity {
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
         progressBar.setProgress((currentWord + 1) * 20);
 
-        Log.d("defs=", Arrays.toString(defs.toArray()));
+        // Generate currentWordAnswerList ArrayList from local database
+        currentWordAnswerList = new ArrayList<>();
+        SQLiteDatabase db = openOrCreateDatabase("wordslist", MODE_PRIVATE, null);
+        Cursor cr = db.rawQuery("SELECT def FROM words", null);
+        if (cr.moveToFirst()) {
+            do {
+                String d = cr.getString(cr.getColumnIndex("def"));
+                currentWordAnswerList.add(d);
+            } while (cr.moveToNext());
+            cr.close();
+        }
+
+        //Log.d("defs=", Arrays.toString(defs.toArray()));
         // Current Word: Generate answer list by removing answer, shuffling, selecting first 4, adding back answer, shuffling again
-        currentWordAnswerList = new ArrayList<>(defs);
+        //currentWordAnswerList = new ArrayList<>(defs);
         Log.d("currentWordAnswerList=", Arrays.toString(currentWordAnswerList.toArray()));
         currentWordAnswerList.remove(currentGameWordList.get(currentWord).def);
         Log.d("currAnsLst PostRemoval=", Arrays.toString(currentWordAnswerList.toArray()));
@@ -211,6 +282,50 @@ public class PlayActivity extends AppCompatActivity {
         // End Activity
         finish();
 
+    }
+
+    private void syncWordsDatabase() {
+        //words = new ArrayList<>();
+        //defs = new ArrayList<>();
+        Log.d("Action", "Creating thread");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                Log.d("Action", "Creating local database");
+                final SQLiteDatabase db = openOrCreateDatabase("wordslist", MODE_PRIVATE, null);
+                db.execSQL("CREATE TABLE IF NOT EXISTS words (word text UNIQUE, def text);");
+
+                mAuth = FirebaseAuth.getInstance();
+
+                Log.d("Action", "Opening firebase database");
+                DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
+                DatabaseReference wordsDB = fb.child("words");
+
+                wordsDB.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        Log.d("dataSnapshot", dataSnapshot.toString());
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                            Log.d("Add word FB", snapshot.getKey().toString() + "//" + snapshot.getValue().toString());
+                            Word w = new Word(snapshot.getKey().toString(), snapshot.getValue().toString());
+                            db.execSQL("REPLACE INTO words (word, def) VALUES('" + w.word + "', '" + w.def + "');");
+                            //words.add(w);
+                            //defs.add(w.def);
+                        }
+
+                        score = 0;
+                        currentWord = 0;
+                        setGameWordList();
+                        askQuestion();
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        Log.d("cancel", "db cancel");
+                    }
+                });
+            }
+        }).start();
     }
 
     private static class Word {

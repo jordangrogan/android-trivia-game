@@ -13,6 +13,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -36,6 +40,12 @@ public class ProfileActivity extends AppCompatActivity {
         if(photoFile.exists()) {
             btn.setEnabled(false);
         }
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String name = user.getDisplayName();
+        Log.d("Name", name);
+        TextView txtName = (TextView) findViewById(R.id.txtName);
+        txtName.setText(name);
 
     }
 
