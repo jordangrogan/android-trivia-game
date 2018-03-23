@@ -59,7 +59,7 @@ INJECTED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assign
 	xmlns:android
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:5:5-23:19
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:5:5-22:19
 MERGED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.firebase:firebase-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/f87e768483d7071af33985fe72fbdf90/AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/b5464b0468ad5fdc0340ac0ebc7e0173/AndroidManifest.xml:22:5-37:19
@@ -164,24 +164,24 @@ activity#edu.pitt.cs1699.androidtriviagame.ScoreHistoryActivity
 ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:21:9-58
 	android:name
 		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:21:19-55
-activity#edu.pitt.cs1699.androidtriviagame.ProfileActivity
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:22:9-62
-	android:name
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:22:19-50
 uses-permission#android.permission.CAMERA
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:26:5-27:52
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:25:5-26:52
 	android:name
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:27:9-49
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:26:9-49
 uses-feature#android.hardware.camera
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:28:5-30:35
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:27:5-29:35
 	android:required
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:30:9-32
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:29:9-32
 	android:name
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:29:9-47
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:28:9-47
 uses-permission#android.permission.MANAGE_DOCUMENTS
-ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:31:5-91
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:30:5-91
 	android:name
-		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:31:22-72
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:30:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:31:5-96
+	android:name
+		ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:31:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/AndroidManifest.xml:32:5-97
 	android:name

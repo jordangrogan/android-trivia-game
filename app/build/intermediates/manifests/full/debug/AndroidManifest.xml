@@ -16,6 +16,7 @@
         android:required="true" />
 
     <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!-- Required permission for App measurement to run. -->
@@ -49,7 +50,6 @@
         <activity android:name="edu.pitt.cs1699.androidtriviagame.StartActivity" />
         <activity android:name="edu.pitt.cs1699.androidtriviagame.PlayActivity" />
         <activity android:name="edu.pitt.cs1699.androidtriviagame.ScoreHistoryActivity" />
-        <activity android:name="edu.pitt.cs1699.androidtriviagame.ProfileActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

@@ -19,7 +19,6 @@
         <activity android:name=".StartActivity" />
         <activity android:name=".PlayActivity" />
         <activity android:name=".ScoreHistoryActivity" />
-        <activity android:name=".ProfileActivity"></activity>
     </application>
 
     <!-- permissions needed for the camera -->
@@ -29,6 +28,7 @@
         android:name="android.hardware.camera"
         android:required="true" />
     <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 
 </manifest>

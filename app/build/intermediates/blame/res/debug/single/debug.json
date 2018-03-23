@@ -1072,6 +1072,10 @@
         "source": "/Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.1.aar/bd4bc4a3f077b8962f28ff6a76c66edb/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
+        "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/drawable_noprofilepic.png.flat",
+        "source": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/res/drawable/noprofilepic.png"
+    },
+    {
         "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "/Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
@@ -1638,10 +1642,6 @@
     {
         "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "/Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/layout_activity_profile.xml.flat",
-        "source": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/res/layout/activity_profile.xml"
     },
     {
         "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
