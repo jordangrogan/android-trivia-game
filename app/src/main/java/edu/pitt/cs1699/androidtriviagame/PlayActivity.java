@@ -264,20 +264,27 @@ public class PlayActivity extends AppCompatActivity {
 
         // Save Score
 
-        SharedPreferences prefs = getSharedPreferences("triviagamescores", MODE_PRIVATE);
-        String scores = prefs.getString("scores","");
+        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference player = fb.child("playerscores").child(uid);
+
+
+//        SharedPreferences prefs = getSharedPreferences("triviagamescores", MODE_PRIVATE);
+//        String scores = prefs.getString("scores","");
 
         Date currentDateTime = Calendar.getInstance().getTime();
         Log.d("CurrentDateTime", currentDateTime.toString());
+//
+//        String scoreToStore = currentDateTime.toString() + "," + score + ";";
+//        scores = scores + scoreToStore;
+//        Log.d("Added to Scores Set", scoreToStore);
+//
+//        SharedPreferences.Editor prefsEditor = prefs.edit();
+//        prefsEditor.putString("scores", scores);
+//
+//        prefsEditor.apply();
 
-        String scoreToStore = currentDateTime.toString() + "," + score + ";";
-        scores = scores + scoreToStore;
-        Log.d("Added to Scores Set", scoreToStore);
-
-        SharedPreferences.Editor prefsEditor = prefs.edit();
-        prefsEditor.putString("scores", scores);
-
-        prefsEditor.apply();
+        player.child(currentDateTime.toString()).setValue(score);
 
         // End Activity
         finish();
@@ -302,7 +309,7 @@ public class PlayActivity extends AppCompatActivity {
                 DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
                 DatabaseReference wordsDB = fb.child("words");
 
-                wordsDB.addListenerForSingleValueEvent(new ValueEventListener() {
+                wordsDB.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         Log.d("dataSnapshot", dataSnapshot.toString());

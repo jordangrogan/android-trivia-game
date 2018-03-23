@@ -48,7 +48,6 @@
         </activity>
         <activity android:name="edu.pitt.cs1699.androidtriviagame.StartActivity" />
         <activity android:name="edu.pitt.cs1699.androidtriviagame.PlayActivity" />
-        <activity android:name="edu.pitt.cs1699.androidtriviagame.AddWordActivity" />
         <activity android:name="edu.pitt.cs1699.androidtriviagame.ScoreHistoryActivity" />
         <activity android:name="edu.pitt.cs1699.androidtriviagame.ProfileActivity" />
         <activity

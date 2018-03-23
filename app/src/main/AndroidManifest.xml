@@ -18,7 +18,6 @@
         </activity>
         <activity android:name=".StartActivity" />
         <activity android:name=".PlayActivity" />
-        <activity android:name=".AddWordActivity" />
         <activity android:name=".ScoreHistoryActivity" />
         <activity android:name=".ProfileActivity"></activity>
     </application>

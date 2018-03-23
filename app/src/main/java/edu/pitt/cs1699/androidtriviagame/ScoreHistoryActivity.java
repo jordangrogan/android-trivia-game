@@ -9,6 +9,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -25,43 +33,82 @@ public class ScoreHistoryActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();  // Always call the superclass method first
 
-        SharedPreferences prefs = getSharedPreferences("triviagamescores",MODE_PRIVATE);
-        String s = prefs.getString("scores", "");
-        Log.d("Scores", s);
+        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        if(!s.equals("")) {
+        Log.d("Action", "Opening firebase database");
+        DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference scoresDB = fb.child("playerscores").child(uid);
+        DatabaseReference playerHighScoresDB = fb.child("playerhighscores");
 
-            String scores[]= s.split(";");
-            Log.d("Number of Scores=",scores.length+"");
+        scoresDB.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
 
-            ArrayList<String> scoresList = new ArrayList<>();
+                ArrayList<String> scoresList = new ArrayList<>();
+                double max = 0.0;
+                NumberFormat formatter = new DecimalFormat("#0");
 
-            double max = 0.0;
-            NumberFormat formatter = new DecimalFormat("#0");
+                Log.d("dataSnapshot", dataSnapshot.toString());
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    double percentage = Double.parseDouble(snapshot.getValue().toString()) / 5 * 100;
 
-            for(int i=(scores.length-1); i>=0; i--) {
-                String[] scoreItem = scores[i].split(",");
-                double percentage = Double.parseDouble(scoreItem[1])/5*100;
-
-                if(percentage > max) {
-                    max = percentage;
+                    if (percentage > max) {
+                        max = percentage;
+                    }
+                    scoresList.add(snapshot.getKey().toString() + "\t\t\t\t\t" + formatter.format(percentage) + "%");
                 }
 
-                scoresList.add(scoreItem[0] + "\t\t\t\t\t" + formatter.format(percentage) + "%");
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, scoresList);
+                ListView list = (ListView) findViewById(R.id.listScoreHistory);
+                list.setAdapter(adapter);
+
+                // Update High Score in Database and on UI
+                TextView highestScore = (TextView) findViewById(R.id.txtHighestScore);
+                highestScore.setText("Highest Score: " + formatter.format(max) + "%");
+                //playerHighScoresDB.child(uid).setValue(max);
             }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.d("cancel", "db cancel");
+            }
+        });
 
-            ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, scoresList);
-            ListView list = (ListView) findViewById(R.id.listScoreHistory);
-            list.setAdapter(adapter);
+//        SharedPreferences prefs = getSharedPreferences("triviagamescores",MODE_PRIVATE);
+//        String s = prefs.getString("scores", "");
+//        Log.d("Scores", s);
+//
+//        if(!s.equals("")) {
+//
+//            String scores[]= s.split(";");
+//            Log.d("Number of Scores=",scores.length+"");
+//
+//            ArrayList<String> scoresList = new ArrayList<>();
+//
+//            double max = 0.0;
+//            NumberFormat formatter = new DecimalFormat("#0");
+//
+//            for(int i=(scores.length-1); i>=0; i--) {
+//                String[] scoreItem = scores[i].split(",");
+//                double percentage = Double.parseDouble(scoreItem[1])/5*100;
+//
+//                if(percentage > max) {
+//                    max = percentage;
+//                }
+//
+//                scoresList.add(scoreItem[0] + "\t\t\t\t\t" + formatter.format(percentage) + "%");
+//            }
+//
+//            ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, scoresList);
+//            ListView list = (ListView) findViewById(R.id.listScoreHistory);
+//            list.setAdapter(adapter);
+//
+//            // Set txtHighestScore
+//            TextView highestScore = (TextView) findViewById(R.id.txtHighestScore);
+//            highestScore.setText("Highest Score: " + formatter.format(max) + "%");
 
-            // Set txtHighestScore
-            TextView highestScore = (TextView) findViewById(R.id.txtHighestScore);
-            highestScore.setText("Highest Score: " + formatter.format(max) + "%");
-
-        }
+//        }
 
     }
-
 
     public void back(View view) {
         finish(); // Will finish this Activity & go back to the Start Activity

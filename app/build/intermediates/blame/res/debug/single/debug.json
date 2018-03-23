@@ -920,6 +920,10 @@
         "source": "/Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
+        "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/layout_add_word_fragment.xml.flat",
+        "source": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/res/layout/add_word_fragment.xml"
+    },
+    {
         "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_normal.xml.flat",
         "source": "/Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/ce5a602c1b58d5edbd69bbb15ea6edd0/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
@@ -1266,10 +1270,6 @@
     {
         "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/Users/jordangrogan/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/dfc475e352d20b67163c686242541f72/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/layout_activity_add_word.xml.flat",
-        "source": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/src/main/res/layout/activity_add_word.xml"
     },
     {
         "merged": "/Users/jordangrogan/Google Drive/School/2018 Spring/CS 1699/Assignment2/AndroidTriviaGame/app/build/intermediates/res/merged/debug/drawable_abc_switch_thumb_material.xml.flat",
