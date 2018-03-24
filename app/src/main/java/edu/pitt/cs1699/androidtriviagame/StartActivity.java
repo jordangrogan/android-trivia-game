@@ -93,6 +93,11 @@ public class StartActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void topScores(View view) {
+        Intent intent = new Intent(this, TopScoresActivity.class);
+        startActivity(intent);
+    }
+
     public void changeProfilePic(View view) {
         // Open camera, & ON ACTIVITY RESULT save it as an image as "UID".jpg & set imgProfilePic ImageView
         Intent picIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

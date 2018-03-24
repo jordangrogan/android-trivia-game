@@ -49,6 +49,9 @@ public class PlayActivity extends AppCompatActivity {
 
     private static FirebaseAuth mAuth;
 
+    private static String uid;
+    private static String uname;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,6 +121,9 @@ public class PlayActivity extends AppCompatActivity {
         scan.close(); */
 
         //Log.d("onCreate defs=", Arrays.toString(defs.toArray()));
+
+        uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        uname = FirebaseAuth.getInstance().getCurrentUser().getDisplayName();
 
     }
 
@@ -263,8 +269,6 @@ public class PlayActivity extends AppCompatActivity {
         Toast.makeText(this, "Final Score: " + score, Toast.LENGTH_SHORT).show();
 
         // Save Score
-
-        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
         DatabaseReference player = fb.child("playerscores").child(uid);
 
@@ -286,8 +290,74 @@ public class PlayActivity extends AppCompatActivity {
 
         player.child(currentDateTime.toString()).setValue(score);
 
+        // TODO: Check Top Scores to see if this tops, notify users if it does
+        refreshTopScores();
+
         // End Activity
         finish();
+
+    }
+
+    private void refreshTopScores() {
+
+        DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference scoresDB = fb.child("highscores");
+
+        Query query1 = scoresDB.orderByKey();
+        query1.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
+                DatabaseReference scoresDB = fb.child("highscores");
+
+                int place = 0;
+
+                Log.d("dataSnapshot", dataSnapshot.toString());
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    int thisScore = Integer.parseInt(snapshot.child("score").getValue().toString());
+                    String thisUser = snapshot.child("user").getValue().toString();
+                    if(score > thisScore) {
+                        // Replace top score
+                        place = Integer.parseInt(snapshot.getKey().toString());
+                        Log.d("place", place+"");
+                        break;
+                    }
+                }
+
+                if(place > 0) {
+                    // It needs to be **inserted** somewhere in the list of top scores (not at the end)
+                    Log.d("todo","Needs to be inserted");
+                    int numPlaces = (int) dataSnapshot.getChildrenCount();
+                    // Bubble sort down
+                    for(int j=(numPlaces+1); j>place; j--) {
+                        if(j != 11) { // Don't care about 11th place, not going to add it to database
+                            int prevScore = Integer.parseInt(dataSnapshot.child(j-1 + "").child("score").getValue().toString());
+                            String prevUser = dataSnapshot.child(j-1 + "").child("user").getValue().toString();
+                            scoresDB.child(j+"").child("score").setValue(prevScore);
+                            scoresDB.child(j+"").child("user").setValue(prevUser);
+                        }
+                    }
+                    scoresDB.child(place+"").child("score").setValue(score);
+                    scoresDB.child(place+"").child("user").setValue(uname);
+
+                    // TODO: notify user
+                } else if((int)dataSnapshot.getChildrenCount() < 10) {
+                    // It can go in last place & there's room in the list
+                    int lastPlace = (int)dataSnapshot.getChildrenCount() + 1;
+                    scoresDB.child(lastPlace+"").child("score").setValue(score);
+                    scoresDB.child(lastPlace+"").child("user").setValue(uname);
+                    // TODO: notify user
+                }
+                // else it doesn't make the list
+
+
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.d("cancel", "db cancel");
+            }
+        });
 
     }
 

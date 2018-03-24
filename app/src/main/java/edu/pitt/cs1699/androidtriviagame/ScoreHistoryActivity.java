@@ -33,12 +33,11 @@ public class ScoreHistoryActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();  // Always call the superclass method first
 
-        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        final String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         Log.d("Action", "Opening firebase database");
-        DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
+        final DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
         DatabaseReference scoresDB = fb.child("playerscores").child(uid);
-        DatabaseReference playerHighScoresDB = fb.child("playerhighscores");
 
         scoresDB.addValueEventListener(new ValueEventListener() {
             @Override
@@ -64,14 +63,19 @@ public class ScoreHistoryActivity extends AppCompatActivity {
 
                 // Update High Score in Database and on UI
                 TextView highestScore = (TextView) findViewById(R.id.txtHighestScore);
-                highestScore.setText("Highest Score: " + formatter.format(max) + "%");
-                //playerHighScoresDB.child(uid).setValue(max);
+                String highestScoreText = "Highest Score: " + formatter.format(max) + "%";
+                highestScore.setText(highestScoreText);
+                DatabaseReference playerHighScoresDB = fb.child("playerhighscores");
+                playerHighScoresDB.child(uid).setValue(max/100*5);
+
             }
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.d("cancel", "db cancel");
             }
         });
+
+
 
 //        SharedPreferences prefs = getSharedPreferences("triviagamescores",MODE_PRIVATE);
 //        String s = prefs.getString("scores", "");
