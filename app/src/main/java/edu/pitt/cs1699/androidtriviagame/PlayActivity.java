@@ -329,7 +329,7 @@ public class PlayActivity extends AppCompatActivity {
                     // It needs to be **inserted** somewhere in the list of top scores (not at the end)
                     Log.d("todo","Needs to be inserted");
                     int numPlaces = (int) dataSnapshot.getChildrenCount();
-                    // Bubble sort down
+                    // Bubble the places down
                     for(int j=(numPlaces+1); j>place; j--) {
                         if(j != 11) { // Don't care about 11th place, not going to add it to database
                             int prevScore = Integer.parseInt(dataSnapshot.child(j-1 + "").child("score").getValue().toString());
