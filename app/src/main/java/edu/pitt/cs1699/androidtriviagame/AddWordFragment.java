@@ -14,7 +14,7 @@ public class AddWordFragment extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle) {
 
         final View dialog = inflater.inflate(R.layout.add_word_fragment, group, false);
-// any code to initialize event listeners, etc.
+
         Button addButton = (Button) dialog.findViewById(R.id.add);
 
         addButton.setOnClickListener(new View.OnClickListener() {

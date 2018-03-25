@@ -32,9 +32,6 @@ import java.util.List;
 
 public class PlayActivity extends AppCompatActivity {
 
-    //private static List<Word> words;
-
-    //private static List<String> defs;
 
     private static List<Word> currentGameWordList;
 
@@ -256,7 +253,7 @@ public class PlayActivity extends AppCompatActivity {
 
                 if(place > 0) {
                     // It needs to be **inserted** somewhere in the list of top scores (not at the end)
-                    Log.d("todo","Needs to be inserted");
+                    Log.d("topten","Needs to be inserted");
                     int numPlaces = (int) dataSnapshot.getChildrenCount();
                     // Bubble the places down
                     for(int j=(numPlaces+1); j>place; j--) {
