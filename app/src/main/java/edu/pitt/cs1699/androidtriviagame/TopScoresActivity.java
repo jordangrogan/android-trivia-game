@@ -66,7 +66,7 @@ public class TopScoresActivity extends AppCompatActivity {
                     scoresList.add(place + ".\t" + nameStr + "\t\t\t\t\t" + formatter.format(percentage) + "%");
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, scoresList);
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(TopScoresActivity.this, android.R.layout.simple_list_item_1, scoresList);
                 ListView list = (ListView) findViewById(R.id.listScoreHistory);
                 list.setAdapter(adapter);
 

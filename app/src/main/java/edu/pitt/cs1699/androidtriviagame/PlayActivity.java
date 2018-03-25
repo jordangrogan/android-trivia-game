@@ -341,13 +341,13 @@ public class PlayActivity extends AppCompatActivity {
                     scoresDB.child(place+"").child("score").setValue(score);
                     scoresDB.child(place+"").child("user").setValue(uname);
 
-                    // TODO: notify user
+                    Toast.makeText(PlayActivity.this, "Congrats! You made the top 10 overall!", Toast.LENGTH_LONG).show();
                 } else if((int)dataSnapshot.getChildrenCount() < 10) {
                     // It can go in last place & there's room in the list
                     int lastPlace = (int)dataSnapshot.getChildrenCount() + 1;
                     scoresDB.child(lastPlace+"").child("score").setValue(score);
                     scoresDB.child(lastPlace+"").child("user").setValue(uname);
-                    // TODO: notify user
+                    Toast.makeText(PlayActivity.this, "Congrats! You made the top 10 overall!", Toast.LENGTH_LONG).show();
                 }
                 // else it doesn't make the list
 

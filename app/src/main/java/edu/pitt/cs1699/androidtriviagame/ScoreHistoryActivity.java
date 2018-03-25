@@ -54,10 +54,12 @@ public class ScoreHistoryActivity extends AppCompatActivity {
                     if (percentage > max) {
                         max = percentage;
                     }
+                    Log.d("add2scoreslist", snapshot.getKey().toString() + "\t\t\t\t\t" + formatter.format(percentage) + "%");
                     scoresList.add(snapshot.getKey().toString() + "\t\t\t\t\t" + formatter.format(percentage) + "%");
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, scoresList);
+                Log.d("action", "Putting scoresList on list");
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(ScoreHistoryActivity.this, android.R.layout.simple_list_item_1, scoresList);
                 ListView list = (ListView) findViewById(R.id.listScoreHistory);
                 list.setAdapter(adapter);
 

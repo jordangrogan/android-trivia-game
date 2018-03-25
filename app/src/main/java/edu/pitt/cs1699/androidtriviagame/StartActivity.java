@@ -1,6 +1,8 @@
 package edu.pitt.cs1699.androidtriviagame;
 
 import android.app.FragmentManager;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.pm.PackageManager;
@@ -25,8 +27,11 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -40,6 +45,7 @@ public class StartActivity extends AppCompatActivity {
     private static final int REQ_CODE_TAKE_PICTURE = 30210;
     private static final int MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 2222;
     private static File photoFile;
+    public static boolean topTenDataLoaded = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +80,9 @@ public class StartActivity extends AppCompatActivity {
         if (!photosDir.exists()) { photosDir.mkdirs(); }
         photoFile = new File(photosDir, uid + ".jpg");
         setProfilePic();
+
+        // Notify player when top 10 list changes
+        notifyWhenTop10Changes();
 
     }
 
@@ -191,6 +200,41 @@ public class StartActivity extends AppCompatActivity {
 
             }
         }
+    }
+
+    private void notifyWhenTop10Changes() {
+        DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference scoresDB = fb.child("highscores");
+
+        scoresDB.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                // Purpose of the topTenDataLoaded variable is that we only want to send the notification when data is CHANGED, not on the initial loading of the data
+                if(topTenDataLoaded) {
+                    Log.d("Top 10", "Data Change, sending notification");
+                    Notification.Builder builder = new Notification.Builder(StartActivity.this)
+                            .setContentTitle("Top 10 Scores Updated")
+                            .setContentText("The top 10 scores in Android Trivia have been updated!")
+                            .setAutoCancel(true)
+                            .setSmallIcon(R.drawable.topten);
+
+                    Notification notification = builder.build();
+
+                    NotificationManager manager = (NotificationManager)
+                            getSystemService(Context.NOTIFICATION_SERVICE);
+                    manager.notify(1, notification);
+
+                } else {
+                    topTenDataLoaded = true;
+                }
+
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.d("cancel", "db cancel");
+            }
+        });
     }
 
 }
