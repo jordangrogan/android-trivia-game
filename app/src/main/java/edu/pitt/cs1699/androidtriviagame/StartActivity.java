@@ -3,9 +3,12 @@ package edu.pitt.cs1699.androidtriviagame;
 import android.app.FragmentManager;
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
@@ -16,6 +19,7 @@ import android.provider.MediaStore;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -46,6 +50,8 @@ public class StartActivity extends AppCompatActivity {
     private static final int MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 2222;
     private static File photoFile;
     public static boolean topTenDataLoaded = false;
+    public static boolean wordsDataLoaded = false;
+    private static LocalBroadcastManager mBroadcastMgr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +89,22 @@ public class StartActivity extends AppCompatActivity {
 
         // Notify player when top 10 list changes
         notifyWhenTop10Changes();
+
+        // Synchronize Word Database
+        synchronizeWordDatabase();
+
+        // Register Broadcast Receiver
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction("edu.pitt.cs1699.androidtriviagame.wordssynced");
+        intentFilter.addCategory("android.intent.category.DEFAULT");
+        BroadcastReceiver mReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                sendWordAddedNotification();
+            }
+        };
+        mBroadcastMgr = LocalBroadcastManager.getInstance(getApplicationContext());
+        mBroadcastMgr.registerReceiver(mReceiver, intentFilter);
 
     }
 
@@ -235,6 +257,78 @@ public class StartActivity extends AppCompatActivity {
                 Log.d("cancel", "db cancel");
             }
         });
+    }
+
+    private void synchronizeWordDatabase() {
+
+        Log.d("Action", "Opening firebase database");
+        DatabaseReference fb = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference wordsDB = fb.child("words");
+
+        wordsDB.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Log.d("dataSnapshot", dataSnapshot.toString());
+
+                final DataSnapshot data = dataSnapshot;
+
+                Log.d("Action", "Creating thread");
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        Log.d("Action", "Creating or opening local database");
+                        final SQLiteDatabase db = openOrCreateDatabase("wordslist", MODE_PRIVATE, null);
+                        db.execSQL("CREATE TABLE IF NOT EXISTS words (word text UNIQUE, def text);");
+
+                        for (DataSnapshot snapshot : data.getChildren()) {
+                            Log.d("Add word FB", snapshot.getKey().toString() + "//" + snapshot.getValue().toString());
+                            db.execSQL("REPLACE INTO words (word, def) VALUES('" + snapshot.getKey().toString() + "', '" + snapshot.getValue().toString() + "');");
+                        }
+
+                        db.close();
+
+                        Log.d("THREAD", "Data updated in local database.");
+
+
+                        // When the thread is done, it notifies an activity using the Broadcast Receivers mechanism
+                        Intent intent = new Intent();
+                        intent.setAction("edu.pitt.cs1699.androidtriviagame.wordssynced");
+                        intent.addCategory("android.intent.category.DEFAULT");
+                        mBroadcastMgr.sendBroadcast(intent);
+
+                    }
+                }).start();
+
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.d("cancel", "db cancel");
+            }
+        });
+
+
+    }
+
+    private void sendWordAddedNotification() {
+        // Purpose of wordsDataLoaded global variable:
+        // Requirement states to only notify when a word is ADDED (thus, on the initial load, a notification is not sent!)
+        if(wordsDataLoaded) {
+            Log.d("BR", "Thread complete & message received from Broadcast Receiver, sending notification.");
+            Notification.Builder builder = new Notification.Builder(StartActivity.this)
+                    .setContentTitle("Word Added")
+                    .setContentText("A word has been added to Android Trivia!")
+                    .setAutoCancel(true)
+                    .setSmallIcon(R.drawable.trivia);
+
+            Notification notification = builder.build();
+
+            NotificationManager manager = (NotificationManager)
+                    getSystemService(Context.NOTIFICATION_SERVICE);
+            manager.notify(2, notification);
+        } else {
+            wordsDataLoaded = true;
+        }
     }
 
 }
